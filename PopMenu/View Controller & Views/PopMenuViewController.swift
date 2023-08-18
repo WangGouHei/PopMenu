@@ -73,7 +73,7 @@ final public class PopMenuViewController: UIViewController {
     public var didDismiss: ((Bool) -> Void)?
     
     public override var prefersStatusBarHidden: Bool {
-        return true
+        return appearance.popMenuStatusBarHidden
     }
     
     // MARK: - Constraints

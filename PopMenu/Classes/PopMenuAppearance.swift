@@ -48,6 +48,9 @@ final public class PopMenuAppearance: NSObject {
     /// The status bar style of the pop menu.
     public var popMenuStatusBarStyle: UIStatusBarStyle?
     
+    /// The status bar hidden
+    public var popMenuStatusBarHidden: Bool = false
+    
     /// The presentation style
     public var popMenuPresentationStyle: PopMenuPresentationStyle = .cover()
 

@@ -66,11 +66,15 @@ final public class PopMenuViewController: UIViewController {
     /// Determines whether the pan gesture is enabled on the actions.
     public var shouldEnablePanGesture: Bool = true
     
-    /// Determines whether enable haptics for iPhone 7 and up.
+    /// Determines whether enable haptics for iPhone 7 and up.ß
     public var shouldEnableHaptics: Bool = true
     
     /// Handler for when the menu is dismissed.
     public var didDismiss: ((Bool) -> Void)?
+    
+    public override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
     // MARK: - Constraints
     
